@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font: 1em/1.5 "Helvetica", sans-serif;
+  font: 1em/1.5 "Open Sans", sans-serif;
   background: #f5f5f5;
   color: #777;
 }
@@ -94,7 +94,7 @@ main {
 }
 
 #contact {
-  padding: 2em 0;
+  padding: 3.2em 0;
 }
 
 .main-footer {
