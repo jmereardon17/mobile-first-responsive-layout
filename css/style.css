@@ -1,0 +1,130 @@
+/* ===================================
+  Base Element Styles
+===================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 1em/1.5 "Helvetica", sans-serif;
+  background: #f5f5f5;
+  color: #777;
+}
+a {
+  text-decoration: none;
+}
+p {
+
+}
+h2 {
+  font-size: 1em;
+  color: #222; /* ? */
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: normal;
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+/* ===================================
+  Base Layout Styles
+===================================== */
+
+/* --- Navigation --- */
+
+.name {
+  margin: 0 0 20px;
+  font-size: 1.5em;
+}
+
+.name,
+nav a {
+  text-align: center;
+  color: #222; /* ? */
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+
+.main-nav li {
+  margin-bottom: 5px;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  background: #fff;
+  padding: 10px 15px;
+}
+
+/* --- Layout Containers --- */
+
+.container {
+  padding: 0 1em;
+}
+
+.main-header {
+  padding: 1.2em 0;
+}
+
+#biography,
+main {
+  text-align: center;
+}
+
+#biography {
+  padding: 20px 0 40px;
+}
+
+#portfolio {
+  padding: 2em 0;
+  background: #fff;
+  color: #222;
+}
+
+#contact {
+  padding: 2em 0;
+}
+
+.main-footer {
+  color: #222;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  padding-top: 1.35em;
+  padding-bottom: 1.35em;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --- Page Elements --- */
+
+.profile-photo {
+  width: 300px;
+}
+
+#gallery {
+  margin-top: 40px;
+}
+
+#gallery li {
+  margin-bottom: 30px;
+}
+
+.main-footer a {
+  text-transform: uppercase;
+}
+
+.desktop-nav {
+  display: none;
+}
