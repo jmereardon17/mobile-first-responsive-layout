@@ -222,6 +222,9 @@ main {
   #contact h2 {
     margin-bottom: 40px;
   }
+  #contact p {
+    padding: 0 2.8em;
+  }
   #contact ul {
     margin-top: 50px;
   }
@@ -250,6 +253,9 @@ main {
   .main-header .container {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .main-nav li {
+    margin-bottom: 0;
   }
   #gallery li {
     flex-basis: 31.97%;
