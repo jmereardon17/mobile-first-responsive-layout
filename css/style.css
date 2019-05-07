@@ -180,6 +180,9 @@ main {
     padding-top: 1.8em;
     padding-bottom: 4em;
   }
+  #biography .container {
+    justify-content: space-between;
+  }
   .main-nav li,
   .desktop-nav li {
     display: inline-block;
@@ -192,28 +195,35 @@ main {
   }
   .secondary {
     order: -1;
-    flex: 0 calc(60% - 15px);
-    margin-right: 15px;
+    /* flex: 0 calc(60% - 15px);
+    margin-right: 15px; */
+    flex: 0 60%;
   }
   .secondary p {
     text-align: left;
     margin-top: 0;
   }
   .primary {
-    flex: 0 40%;
+    /* flex: 0 40%; */
+    flex: 0 38%;
   }
   .profile-photo {
     width: 100%;
+    margin-top: 7.12px;
     margin-bottom: 0;
   }
   #gallery {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
-  #gallery li {
+  /* #gallery li {
     flex: 0 49.1%;
   }
   #gallery li:nth-child(2n+1) {
     margin-right: 12px;
+  } */
+  #gallery li {
+    flex: 0 49%;
   }
   #gallery li p {
     padding-left: 2em;
@@ -254,10 +264,16 @@ main {
     flex-direction: row;
     justify-content: space-between;
   }
+  .name {
+    margin-bottom: 0;
+  }
   .main-nav li {
     margin-bottom: 0;
   }
   #gallery li {
+    flex-basis: 32.3333%;
+  }
+  /* #gallery li {
     flex-basis: 31.97%;
   }
   #gallery li:nth-child(1n+1) {
@@ -265,7 +281,7 @@ main {
   }
   #gallery li:nth-child(3n+3) {
     margin-right: 0;
-  }
+  } */
   #contact h2 {
     margin-bottom: 30px;
   }
