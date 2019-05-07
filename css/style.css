@@ -219,6 +219,12 @@ main {
     padding-left: 2em;
     padding-right: 2em;
   }
+  #contact h2 {
+    margin-bottom: 40px;
+  }
+  #contact ul {
+    margin-top: 50px;
+  }
   .desktop-nav {
     display: block;
   }
@@ -246,12 +252,15 @@ main {
     justify-content: space-between;
   }
   #gallery li {
-    flex-basis: 32%;
+    flex-basis: 31.97%;
   }
   #gallery li:nth-child(1n+1) {
     margin-right: 18px;
   }
   #gallery li:nth-child(3n+3) {
     margin-right: 0;
+  }
+  #contact h2 {
+    margin-bottom: 30px;
   }
 }
