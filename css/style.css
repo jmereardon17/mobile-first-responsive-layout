@@ -14,15 +14,19 @@ a {
   text-decoration: none;
   color: #434343;
 }
+h2,
+h3 {
+  letter-spacing: -.5px;
+}
 h2 {
-  font-size: .90em;
+  font-size: .905em;
   font-weight: 800;
   color: #434343;
   text-transform: uppercase;
 }
 h3 {
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.155em;
   margin-bottom: -5px;
 }
 ul {
@@ -62,7 +66,7 @@ nav a {
   font-weight: 800;
   display: block;
   background: #fff;
-  padding: 10px 15px;
+  padding: 9.5px 15px;
 }
 
 /* --- Layout Containers --- */
@@ -81,7 +85,7 @@ main {
 }
 
 #biography {
-  padding: 16px 0 22px;
+  padding: 16px 0 24px;
 }
 
 #portfolio {
@@ -91,7 +95,7 @@ main {
 }
 
 #contact {
-  padding: 3.2em 0 3.25em;
+  padding: 3em 0 3.25em;
 }
 
 .main-footer {
@@ -101,27 +105,25 @@ main {
   border-top: 1px solid #e2e2e2;
   padding-top: 1.6em;
   padding-bottom: 1.6em;
-  display: flex;
-  justify-content: space-between;
 }
 
 /* --- Page Elements --- */
 
 .profile-photo {
   width: 205px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 #gallery {
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 #gallery li {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 #gallery li p {
-  font-size: .95em;
+  font-size: .92em;
   padding: 0 .5em;
 }
 
@@ -129,8 +131,12 @@ main {
   margin-bottom: 30px;
 }
 
+#contact p {
+  letter-spacing: -.5px;
+}
+
 #contact ul {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 #contact ul li {
@@ -151,6 +157,14 @@ main {
   font-size: .80rem;
 }
 
+.main-footer span {
+  float: left;
+}
+
+.mobile-nav {
+  float: right;
+}
+
 .desktop-nav {
   display: none;
 }
@@ -164,24 +178,15 @@ main {
     padding-left: 2em;
     padding-right: 2em;
   }
-  .main-header .container,
-  #biography .container,
-  #gallery {
-    display: flex;
-  }
-  .main-header .container {
-    flex-direction: column;
-    align-items: center;
+  .main-header {
+    text-align: center;
   }
   .main-header {
-    padding-top: 2.6em;
+    padding-top: 2.8em;
   }
   #biography {
-    padding-top: 1.8em;
-    padding-bottom: 4em;
-  }
-  #biography .container {
-    justify-content: space-between;
+    padding-top: 1.5em;
+    padding-bottom: 3.5em;
   }
   .main-nav li,
   .desktop-nav li {
@@ -194,52 +199,53 @@ main {
     background: none;
   }
   .secondary {
-    order: -1;
-    /* flex: 0 calc(60% - 15px);
-    margin-right: 15px; */
-    flex: 0 60%;
+    float: left;
+    width: 59%;
+    padding-right: 1em;
   }
   .secondary p {
     text-align: left;
     margin-top: 0;
+    letter-spacing: -.5px;
   }
   .primary {
-    /* flex: 0 40%; */
-    flex: 0 38%;
+    float: right;
+    width: 41%;
   }
   .profile-photo {
     width: 100%;
     margin-top: 7.12px;
     margin-bottom: 0;
   }
-  #gallery {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  /* #gallery li {
-    flex: 0 49.1%;
-  }
-  #gallery li:nth-child(2n+1) {
-    margin-right: 12px;
-  } */
   #gallery li {
-    flex: 0 49%;
+    float: left;
+    width: 49.152%;
+  }
+  #gallery li:nth-child(2n) {
+    margin-left: 1.696%;
   }
   #gallery li p {
     padding-left: 2em;
     padding-right: 2em;
   }
+  #contact {
+    padding-top: 2.95em;
+  }
   #contact h2 {
     margin-bottom: 40px;
   }
   #contact p {
-    padding: 0 2.8em;
+    padding: 0 3.8em;
   }
   #contact ul {
     margin-top: 50px;
   }
+  #contact ul li {
+    margin-bottom: 15px;
+  }
   .desktop-nav {
     display: block;
+    float: right;
   }
   .desktop-nav li {
     margin-left: 30px;
@@ -254,35 +260,59 @@ main {
     font-size: 1.26em;
   }
 }
+@media screen and (min-width: 906px) {
+  #gallery li:nth-child(3) {
+    clear: left;
+  }
+}
 @media screen and (min-width: 1024px) {
   #wrapper {
     width: 94%;
     max-width: 1150px;
     margin: 0 auto;
   }
-  .main-header .container {
-    flex-direction: row;
-    justify-content: space-between;
+  .main-header {
+    padding-top: 3.1em;
   }
   .name {
+    float: left;
     margin-bottom: 0;
+  }
+  .main-nav {
+    float: right;
   }
   .main-nav li {
     margin-bottom: 0;
   }
+  #biography {
+    padding-bottom: 3.2em;
+  }
   #gallery li {
-    flex-basis: 32.3333%;
+    width: 32%;
   }
-  /* #gallery li {
-    flex-basis: 31.97%;
+  #gallery li:nth-child(2n) {
+    margin-left: 0;
   }
-  #gallery li:nth-child(1n+1) {
-    margin-right: 18px;
+  #gallery li:nth-child(3n + 0),
+  #gallery li:nth-child(3n - 1) {
+    margin-left: 2%;
   }
-  #gallery li:nth-child(3n+3) {
-    margin-right: 0;
-  } */
+  #gallery li:nth-child(3) {
+    clear: none;
+  }
+  #gallery li p {
+    padding-left: 0;
+    padding-right: 0;
+  }
   #contact h2 {
     margin-bottom: 30px;
   }
+}
+
+/* --- ClearFix --- */
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
 }
