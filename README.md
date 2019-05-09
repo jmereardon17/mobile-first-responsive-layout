@@ -1,4 +1,4 @@
-# techdegree-project-2
+# Techdegree Project 2
 
 For this project I was given three image mockups for a mobile, tablet, and desktop layout. I had to match the designs perfectly.
 
