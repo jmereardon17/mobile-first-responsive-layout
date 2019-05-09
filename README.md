@@ -1,1 +1,11 @@
 # techdegree-project-2
+
+For this project I was given three image mockups for a mobile, tablet, and desktop layout. I had to match the designs perfectly.
+
+I went for the Exceeds Expectations Grading where I had to further enhance the project by adding another google font, additional skills section to the page, additional styling to links/hover effects.
+
+Browsers tested for compatibility:
+- Chrome
+- Firefox
+- Edge
+- Safari
