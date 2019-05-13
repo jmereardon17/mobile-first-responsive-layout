@@ -9,3 +9,5 @@ Browsers tested for compatibility:
 - Firefox
 - Edge
 - Safari
+
+Grade: Exceeds Expectations
